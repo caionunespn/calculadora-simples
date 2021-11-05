@@ -1,0 +1,5 @@
+![Tela inicial](./prints/1.png)
+![Valor inválido para campo 1](./prints/2.png)
+![Valor inválido para campo 2](./prints/3.png)
+![Divisor 0](./prints/5.png)
+![Operação concluída](./prints/4.png)

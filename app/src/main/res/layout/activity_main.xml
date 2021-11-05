@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="#22252D"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingTop="4dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="4dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:contentDescription="@string/contDec"
+                android:importantForAccessibility="no"
+                app:srcCompat="@mipmap/im_dinheiro_round" />
+
+            <TextView
+                android:id="@+id/textViewOper1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@string/oper1"
+                android:text="@string/oper1"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/edT_oper1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="35dp"
+                android:background="#2A2D37"
+                android:ems="10"
+                android:hint="@string/operHint"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#C6C6C6"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/oper1Error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewOper2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/oper2"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edT_oper2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="40dp"
+                android:background="#2A2D37"
+                android:ems="10"
+                android:hint="@string/operHint"
+                android:importantForAccessibility="yes"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingTop="4dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="4dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#C6C6C6"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/oper2Error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:textColor="#FF0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textViewOpera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/oper"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="8dp"
+                android:background="#2A2D37"
+                android:gravity="fill_horizontal|center_vertical"
+                android:padding="8dp"
+                android:spinnerMode="dialog"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewOpera2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/resLabel"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tV_res"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/res"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#4FBFAB"
+                    android:importantForAccessibility="yes"
+                    android:text="@string/buttonCalc"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
